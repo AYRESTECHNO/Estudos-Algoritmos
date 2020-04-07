@@ -1,31 +1,21 @@
-algoritmo "semnome"
-// Função : Demonstrar a capacidade de recursividade do Visualg versão 2.0
-//          bem como o uso de variáveis locais
-// Autor : Cláudio Morgado de Souza
-// Data : 29/12/2003
+algoritmo "fatorial"
+// Função :
+// Autor :
+// Data : 03/04/2020
 // Seção de Declarações 
-var valor : inteiro
-
-procedimento obtervalor
-var x : inteiro
-inicio
-escreva("Digite um número:")
-leia(x)
-valor <- x
-fimprocedimento
-
-funcao fatorial(v:inteiro) : inteiro
-inicio
-se v <= 2 entao
-   retorne v
-senao
-   retorne v * fatorial(v-1)
-fimse
-fimfuncao
+var
+   fatorial, i, num: inteiro
 
 inicio
-// Corpo principal do programa
-obtervalor
-escreva("O fatorial de ",valor," é ",fatorial(valor))
+// Seção de Comandos 
+   fatorial := 1
+   escreva("Digite o Valor: ")
+   leia(num)
+   para i de 1 ate num faca
+        fatorial := fatorial * i
+   fimpara
+   escreval("O Fatorial de ", num, " é: ", fatorial)
+   
+
+
 fimalgoritmo
-

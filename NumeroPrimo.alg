@@ -1,21 +1,31 @@
 algoritmo "NumeroPrimo"
-// Função : crie um algoritmo que leia um numero inteiro e diga se ele é primo ou não.
+// Função :
 // Autor :
-// Data : 19/01/2020
+// Data : 26/02/2019
 // Seção de Declarações 
 var
-   num: Inteiro
+   C, N, ContDiv: Inteiro
 
 inicio
 // Seção de Comandos
-
-   escreva("Digite um Valor: ")
-   leia(num)
-   se (num / 1 = num) e  (num / num = 1) entao
-      escreval("O Valor", num, " É PRIMO!")
-   senao
-        escreval("O Valor", num, "NÃO É PRIMO1")
-   fimse
+   C <- 1
+   ContDiv <- 0
+   Escreva("Digite um número: ")
+   Leia(N)
+   Repita
+         //Escreva(C)
+         Se (C % N = 0) entao
+            ContDiv <- ContDiv + 1
+         FimSe
+         C <- C +1
+   Ate(N > C)
+   //Escreval(" Ao todo existem ", ContDiv, " valores divisíveis")
+   Se (ContDiv > 2) entao
+      Escreval(" O valor ", N, " não é primo!")
+   Senao
+        Escreval(" O valor ", N, " é primo!")
+   
+   FimSe
 
 
 fimalgoritmo

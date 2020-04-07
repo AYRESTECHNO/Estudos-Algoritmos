@@ -1,14 +1,14 @@
 algoritmo "OlaMundo"
-// Função : Criar um programa que imprima um texto na tela: Olá, Mundo!
-// Autor : João Marcos
-// Data : 01/01/2020
+// Função : Mostra na Tela Ola Mundo!
+// Autor : Joao Marcos
+// Data : 12/12/2018
 // Seção de Declarações 
 var
-    msg: Caractere
+   msg: caracter
 inicio
 // Seção de Comandos
-   //Escreva("Olá, Mundo!")
    msg <- "Olá, Mundo!"
-   Escreval(msg)
-
+   escreva("Mensagem ", msg)
+   
+ 
 fimalgoritmo
