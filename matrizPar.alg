@@ -1,36 +1,35 @@
 algoritmo "matrizPar"
 // Função :
 // Autor :
-// Data : 07/03/2019
+// Data : 11/04/2020
 // Seção de Declarações 
 var
    valores: vetor[1..3, 1..3] de Inteiro
-   l, c, TotPar: Inteiro
-   
+   l, c, totPar: Inteiro
+
 inicio
 // Seção de Comandos
-   Para l <- 1 ate 3 faca
-        Para c <- 1 ate 3 faca
-             Escreva("Digite o valor da posição [", l, ",", c, "]: ")
-             Leia(valores[l, c])
+   Para l := 1 ate 3 faca
+        Para c := 1 ate 3 faca
+            Escreva("Digite o Valor da Posição [", l, ",", c, "]: ")
+            Leia(valores[l, c])
         FimPara
    FimPara
 
    Escreval()
    Escreval("MATRIZ: ")
-   Escreval("---------------")
-   TotPar <- 0
-   Para l <- 1 ate 3 faca
-        Para c <- 1 ate 3 faca
-             Se(valores[l, c] % 2 = 0) entao
-                  Escreva(" {", valores[l, c]:2, " }")
-                  TotPar <- TotPar + 1
-             senao
-                  Escreva(valores[l, c]:4)
-             FimSe
-        FimPara
-        Escreval()
+   Escreval("-----------------")
+   totPar := 0
+   Para l := 1 ate 3 faca
+          Para c := 1 ate 3 faca
+               Se (valores[l,c] % 2 = 0) entao
+                  Escreva("[", valores[l, c]:2, "]")
+                  totPar := totPar + 1
+               Senao
+                    Escreva(valores[l, c]:4)
+               FimSe
+          FimPara
+          Escreval()
    FimPara
-   Escreval("---------------")
-   Escreval("Ao todo foram digitados", TotPar, " valores PARES.")
+   Escreval("Ao Todo foram Digitados ", totPar, " Valores PARES!!!")
 fimalgoritmo

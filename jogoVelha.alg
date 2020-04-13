@@ -1,7 +1,5 @@
 algoritmo "jogoVelha"
-// =============================================================
-// Algoritmo para criar um jogo da velha.
-// =============================================================
+
 var
   v: vetor[1..3, 1..3] de Caractere
   L, C, Cont, Po: Inteiro
@@ -100,11 +98,11 @@ inicio
    MostraVelha()
    Repita
       Repita
-         EscrevaL("Vai jogar [", simb:1, "] em qual posicao? ")
+         EscrevaL("Vai jogar [", simb:1, "] em qual posição? ")
          Leia(Po)
          R <- Jogar(Simb, Po))
          Se (R = falso) entao
-            EscrevaL("JOGADA INVALIDA!")
+            EscrevaL("JOGADA INVÁLIDA!")
          FimSe
       Ate (R = verdadeiro)
       MudaJogador()
